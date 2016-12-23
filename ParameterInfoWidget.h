@@ -17,6 +17,9 @@ public:
 
     void update();
 
+private slots:
+    void showContextMenu(QPoint point);
+
 private:
     Ui::ParameterInfoWidget *ui;
 };
