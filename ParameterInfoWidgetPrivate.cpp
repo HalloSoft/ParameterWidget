@@ -60,5 +60,5 @@ void ParameterInfoWidgetPrivate::update()
 //    model->setQuery("SELECT * FROM qry_paramsimple");
 
     _parentUi->tableView->setModel(model);
-    _parentUi->tableView->hideColumn(0);
+    //_parentUi->tableView->hideColumn(0);
 }
