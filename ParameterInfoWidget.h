@@ -3,6 +3,8 @@
 
 #include <QWidget>
 
+class ParameterInfoWidgetPrivate;
+
 namespace Ui {
 class ParameterInfoWidget;
 }
@@ -10,6 +12,7 @@ class ParameterInfoWidget;
 class ParameterInfoWidget : public QWidget
 {
     Q_OBJECT
+    Q_DECLARE_PRIVATE(ParameterInfoWidget)
 
 public:
     explicit ParameterInfoWidget(QWidget *parent = 0);
@@ -18,10 +21,11 @@ public:
     void update();
 
 private slots:
-    void showContextMenu(QPoint point);
 
 private:
     Ui::ParameterInfoWidget *ui;
+
+    ParameterInfoWidgetPrivate* d_ptr;
 };
 
 #endif // PARAMETERINFOWIDGET_H

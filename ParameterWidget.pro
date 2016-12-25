@@ -16,11 +16,13 @@ TEMPLATE = app
 SOURCES += main.cpp\
         maindialog.cpp \
     ParameterInfoWidget.cpp \
-    qsqlconnectiondialog.cpp
+    qsqlconnectiondialog.cpp \
+    ParameterInfoWidgetPrivate.cpp
 
 HEADERS  += maindialog.h \
     ParameterInfoWidget.h \
-    qsqlconnectiondialog.h
+    qsqlconnectiondialog.h \
+    ParameterInfoWidgetPrivate.h
 
 FORMS    += maindialog.ui \
     ParameterInfoWidget.ui \
